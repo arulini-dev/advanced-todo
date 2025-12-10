@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    /* Center the app on the screen [cite: 28] */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top of the viewport */
+    min-height: 100vh;
+    margin-top: 50px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px; /* Add border radius [cite: 29] */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+#addButton {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#addButton:hover {
+    background-color: #4cae4c;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px; /* Add spacing [cite: 32] */
+    background: #eef;
+    border-radius: 5px;
+    border-left: 5px solid #5cb85c;
+    transition: background-color 0.3s;
+}
+
+/* Style for completed tasks [cite: 33] */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f0f0f0 !important;
+    border-left: 5px solid #aaa !important;
+}
+
+.task-buttons button {
+    margin-left: 8px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.task-buttons button:hover {
+    opacity: 0.8;
+}
+
+/* Style specific buttons [cite: 34] */
+.complete-btn { background-color: #007bff; color: white; }
+.edit-btn { background-color: #ffc107; color: #333; }
+.delete-btn { background-color: #dc3545; color: white; }
+
+.task-date {
+    font-size: 0.8em;
+    color: #777;
+    margin-right: 15px;
+}
