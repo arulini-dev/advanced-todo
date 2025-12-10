@@ -48,7 +48,7 @@ h2 {
 }
 
 #addButton:hover {
-    background-color: #4cae4c;
+    background-color: #5cb85c;
 }
 
 #taskList {
@@ -97,6 +97,6 @@ h2 {
 
 .task-date {
     font-size: 0.8em;
-    color: #777;
+    color: sandybrown;
     margin-right: 15px;
 }
